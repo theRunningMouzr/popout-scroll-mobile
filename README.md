@@ -8,7 +8,7 @@ This code makes a full screen image popout on mobile devices (designed for adver
  - Click on the image dismisses the popout and sets a cookie
  - Click on the closing (x) button dismisses the popout and sets the same cookie
  - Set parameters (cookie name, cookie value, cookie age, scroll target in pixels, image source and image link) using variables at the beginning of the script file
- - HTML file is irrelevant appart from this ('<div id="popout__container" class="popout__container"></div>') which is how you introduce the popout to any page you want to use it on. If you remove that div the popout is gone and the console shouldn't throw out any errors. Commented HTML in the index.html file is the HTML used for insertion in the script.js file.
+ - HTML file is irrelevant appart from one parent div with class and id popout__conteiner which is how you introduce the popout to any page you want to use it on. If you remove that div the popout is gone and the console shouldn't throw out any errors. Commented HTML in the index.html file is the HTML used for insertion in the script.js file.
  - Only relevant CSS begins after commented part in the css file
  
 I'll be adding more features soon.
