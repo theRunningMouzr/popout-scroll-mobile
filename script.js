@@ -2,7 +2,7 @@
 
     if (document.querySelector('#popout__container') !== null) {
 
-        // fill out these variables
+        // fill out these variables with your desired parameters
         const cookieName = 'cookie-name'; // name of the cookie *string
         const cookieValue = 'shown'; // value of the cookie *string
         const cookieAge = 30; // *number in days
