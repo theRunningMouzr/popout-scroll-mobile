@@ -1,0 +1,96 @@
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+    
+    body {
+        box-sizing: border-box;
+    }
+    
+    .div1 {
+        background-color: aliceblue;
+        height: 500px;
+    }
+    
+    .div2 {
+        background-color: aquamarine;
+        height: 700px;
+    }
+    /* popout styles */
+    
+    .popout {
+        background-color: #f1f1f1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100000;
+        overflow: auto;
+        -webkit-animation-name: slideUp;
+        animation-name: slideUp;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+    }
+    
+    .popout__close-btn {
+        background-color: #1e1e1e;
+        height: 28px;
+        width: 28px;
+        border-radius: 100px;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .popout__close-btn span {
+        background-color: #f1f1f1;
+        display: block;
+        height: 3px;
+        width: 20px;
+        position: fixed;
+    }
+    
+    #popout__close-btn-1 {
+        transform: rotate(45deg);
+    }
+    
+    #popout__close-btn-2 {
+        transform: rotate(-45deg);
+    }
+    
+    .popout__img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .popout__img img {
+        display: block;
+        width: 100%;
+    }
+    
+    @-webkit-keyframes slideUp {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideUp {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
